@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>发布活动</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/amazeui.css">
+		<link rel="stylesheet" type="text/css" href="css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="css/date.css" />
+		
+		<!--<script type="text/javascript" src="js/jquery-1.9.1.js"></script>-->
+		
+	</head>
+
+	<body>
+		<div class="wrap">
+			<!--
+        	作者：1259146129@qq.com
+        	时间：2017-06-07
+        	描述：头部
+        -->
+			<header class="am-text-center">
+				<div class="am-padding-vertical-sm am-text-lg title">
+					发布活动
+				</div>
+			</header>
+			<!--
+        	作者：1259146129@qq.com
+        	时间：2017-06-07
+        	描述：内容
+       -->
+			<form action="" method="">
+				<div class="giveActivityWrap">
+					<div class="am-padding-xs am-margin-sm checkBox" id="checkBox">
+						<div class="littleBox am-padding-vertical-xs">
+							太极拳
+						</div>
+						<div class="littleBox am-padding-vertical-xs">
+							太极拳
+						</div>
+						<div class="littleBox am-padding-vertical-xs">
+							太极拳
+						</div>
+						<div class="littleBox am-padding-vertical-xs">
+							太极拳
+						</div>
+						<div class="littleBox am-padding-vertical-xs">
+							太极拳
+						</div>
+						<div class="littleBox am-padding-vertical-xs">
+							太极拳
+						</div>
+						<div class="littleBox am-padding-vertical-xs">
+							太极拳
+						</div>
+						<div class="littleBox am-padding-vertical-xs">
+							太极拳
+						</div>
+
+					</div>
+				</div>
+
+				<!--活动名称-->
+				<div class="am-form-group am-form-icon">
+					<i class="am-icon-flag"></i>
+					<input type="text" class="am-form-field borderWrap" placeholder="输入活动名称">
+				</div>
+				<!--活动描述-->
+				<div class="am-form-group">
+					<textarea class="borderWrap" style="width: 100%; overflow:hidden; resize:none;" rows="5" id="doc-ta-1" placeholder="填写活动描述，使更多的人参与活动..."></textarea>
+				</div>
+				<!--图片上传-->
+				<div class="am-form-group TimeWrap">
+					<div class="am-g am-text-xs">
+						<div class="am-u-sm-4 Time">
+							<label class="am-margin-top-xs TimeLabel" for="startTime">图片上传</label>
+						</div>
+						<div class="am-u-sm-8">
+
+						</div>
+					</div>
+				</div>
+				<!--时间-->
+				<div class="am-form-group TimeWrap">
+					<div class="am-g">
+						<div class="am-u-sm-4">
+							<label class="am-margin-top-xs TimeLabel" for="startTime">开始时间:</label>
+						</div>
+						<div class="am-u-sm-8 Time">
+							<input type="text" class="am-form-field borderWrap" id="startTime" placeholder="">
+							<span class="am-icon-angle-right am-icon-sm timeIcon"></span>
+						</div>
+					</div>
+				</div>
+				<div class="am-form-group TimeWrap">
+					<div class="am-g">
+						<div class="am-u-sm-4 Time">
+							<label class="am-margin-top-xs TimeLabel" for="startTime">结束时间:</label>
+						</div>
+						<div class="am-u-sm-8">
+							<input type="text" class="am-form-field borderWrap" id="endTime" placeholder="">
+							<span class="am-icon-angle-right am-icon-sm timeIcon"></span>
+						</div>
+					</div>
+				</div>
+				<div class="am-form-group TimeWrap">
+					<div class="am-g">
+						<div class="am-u-sm-5 Time">
+							<label class="am-margin-top-xs TimeLabel" for="startTime">报名截止时间:</label>
+						</div>
+						<div class="am-u-sm-7">
+							<input type="text" class="am-form-field borderWrap" id="stopTime" placeholder="">
+							<span class="am-icon-angle-right am-icon-sm timeIcon"></span>
+						</div>
+					</div>
+				</div>
+				<div id="datePlugin"></div>
+				<!--地点-->
+				<div class="am-form-group TimeWrap">
+					<div class="am-g">
+						<div class="am-u-sm-2 Time">
+							<label class="am-margin-top-xs TimeLabel">地点:</label>
+						</div>
+						<div class="am-u-sm-10">
+							<input type="text" class="am-form-field borderWrap">
+							<span class="am-icon-angle-right am-icon-sm timeIcon"></span>
+						</div>
+					</div>
+				</div>
+				<!--费用-->
+				<div class="am-form-group TimeWrap">
+					<div class="am-g am-text-xs">
+						<div class="am-u-sm-2 Time">
+							<label class="am-margin-top-xs TimeLabel" for="startTime">费用</label>
+						</div>
+						<div class="am-u-sm-10 marginTop">
+							<span class="price am-padding-right-sm active">免费</span>
+							<span class="price am-padding-right-sm">我请客</span>
+							<span class="price am-padding-right-sm">求请客</span>
+							<span class="price am-padding-right-sm">AA</span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<!--人数-->
+				<div class="am-form-group TimeWrap">
+					<div class="am-g am-text-xs">
+						<div class="am-u-sm-2 Time">
+							<label class="am-margin-top-xs TimeLabel" for="startTime">人数</label>
+						</div>
+						<div class="am-u-sm-10 marginTop">
+							<span class="number am-padding-right-sm active">不限</span>
+							<span class="number am-padding-right-sm">或<input class="am-text-center am-margin-horizontal-xs" style="width: 4rem; height: 2rem;"/>人</span>
+
+						</div>
+					</div>
+				</div>
+				<!--性别-->
+				<div class="am-form-group TimeWrap">
+					<div class="am-g am-text-xs">
+						<div class="am-u-sm-2 Time">
+							<label class="am-margin-top-xs TimeLabel" for="startTime">性别</label>
+						</div>
+						<div class="am-u-sm-10 marginTop">
+							<span class="sex am-padding-right-sm active">不限</span>
+							<span class="sex am-padding-right-sm">只限男</span>
+							<span class="sex am-padding-right-sm">只限女</span>
+						</div>
+					</div>
+				</div>
+				<div class="am-padding-horizontal-sm am-margin-top-sm">
+					<button type="submit" class="am-btn am-btn-success am-btn-block">发布</button>
+				</div>
+			</form>
+		</div>
+		<!--
+        	作者：1259146129@qq.com
+        	时间：2017-06-07
+        	描述：导航栏
+       -->
+		<footer class="bar">
+			<div class="am-g am-padding-vertical-xs">
+				<a href="index.html" class="am-u-sm-3 am-text-center am-link-muted">
+					<span class="am-icon-eye am-icon-sm"></span>
+					<div class="am-text-center am-text-xs">发现</div>
+				</a>
+				<a href="giveActivity.html" class="am-u-sm-3 am-text-center am-link-muted active">
+					<span class="am-icon-pencil am-icon-sm"></span>
+					<div class="am-text-center am-text-xs">发布</div>
+				</a>
+				<a href="media.html" class="am-u-sm-3 am-text-center am-link-muted">
+					<span class="am-icon-video-camera am-icon-sm"></span>
+					<div class="am-text-center am-text-xs">视频</div>
+				</a>
+				<a href="center.html" class="am-u-sm-3 am-text-center am-link-muted">
+					<span class="am-icon-user am-icon-sm"></span>
+					<div class="am-text-center am-text-xs">我的</div>
+				</a>
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="assets/js/amazeui.js"></script>
+		<script type="text/javascript" src="js/fontSize.js"></script>
+		<script type="text/javascript" src="js/date.js"></script>
+		<script type="text/javascript" src="js/iscroll.js"></script>
+		<script type="text/javascript" src="js/giveActivity.js" ></script>
+	</body>
+
+</html>

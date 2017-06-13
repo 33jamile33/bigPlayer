@@ -1,0 +1,247 @@
+/*common*/
+body {
+	background-color: #F5F5F5;
+}
+
+header {
+	background-color: #2FB791;
+}
+
+.title {
+	color: #fff;
+	font-weight: bold;
+}
+
+.wrap{
+	margin-bottom: 7rem;
+}
+
+.bar {
+	width: 100%;
+	background-color: #fff;
+	position: fixed;
+	top: auto;
+	bottom: 0;
+}
+
+/*index*/
+.search {
+	position: absolute;
+	top: 1rem;
+	right: 2rem;
+	color: #fff;
+}
+
+section {
+	background-color: #fff;
+}
+
+.nearActivity {
+	border-left: 10px solid #2FB791;
+}
+
+.nearActivityWrap {
+	background-color: #fff;
+	display: block;
+}
+
+.nearActivityTitle {
+	font-size: 1.2rem;
+	color: #000;
+	font-weight: bold;
+}
+
+.nearActivityTime,
+.nearActivityLation {
+	font-size: 1.1rem;
+	color: #000;
+}
+
+.nearActivityMoneyType {
+	font-size: 1.2rem;
+	color: #000;
+}
+
+
+/*giveActivity*/
+.test{
+	background-color: #2FB791;
+}
+.checkBox{
+	border: 1px dotted #009CDA;
+	overflow: hidden;
+}
+
+.littleBox{
+	color: #fff;
+	font-weight: bold;
+	background-color: #C8C7CF;
+	width: 21%;
+	text-align: center;
+	margin: 0.3rem 2%;
+	float: left;
+	border-radius: 0.5rem;
+}
+.TimeWrap{
+	background-color: #fff;
+}
+.TimeLabel{
+	font-size: 1.4rem;	
+}
+.Time{
+	position: relative;
+}
+.timeIcon{
+	position: absolute; 
+	top: 0.4rem;
+	right: 1rem; 
+	color: #808080;
+}
+
+.borderWrap{
+	border: 0;		
+	/*font-size: 1.6rem;*/	
+}
+.marginTop{
+	margin-top: 0.7rem;
+}
+.active{
+	color: #2CB891;
+}
+
+/*media*/
+.mediaWrap{
+	 overflow: hidden;
+}
+.mediaChoice{
+	background-color: #fff; 
+	width: 31.33%; 
+	float: left; 
+	margin: 0 1%;
+	margin-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.mediaChoice img{
+	width: 7rem; 
+	height: 7rem; 
+	margin: 1rem 1rem 0 1rem;
+}
+.mediaChoice div{
+	color: #666666;
+	padding-top: 0.3rem;
+}
+
+/*videoDetail*/
+.topWrap{
+	position: relative;
+}
+.turnBack{
+	position: absolute; 
+	top: 0; 
+	left: 0.5rem; 
+	color: #fff;
+}
+.share{
+	position: absolute; 
+	top: 0.5rem; 
+	right: 0.7rem; 
+	color: #fff;
+}
+.videoInfo{
+	 position: absolute; 
+	 bottom: -3rem; 
+	 left: 10.6rem; 
+	 color: #fff; 
+	 font-weight: bold;
+}
+.videoInfoImg{
+	width: 8rem; 
+	height: 8rem;
+	/*background-color: #fff;*/
+}
+.introduction{
+	background-color: #fff; 
+	font-weight: bold;
+}
+.detailWrap{
+	position: relative;
+	margin-bottom: 1px;
+}
+.detailTitle{
+	background-color: #fff; 
+	display:block;
+}
+.detailPlay{
+	position: absolute; 
+	top: 2rem; 
+	right: 1rem;
+}
+
+
+/*center*/
+.userInfoImg{
+	width: 8rem; 
+	height: 8rem;
+}
+.userInfoName{
+	color: #fff;
+}
+
+.choice{
+	width: 5rem;
+	height: 5rem;
+}
+
+.userInfoWrap{
+	background-color: #fff;
+}
+
+.userInfoWrap a{
+	display: inline-block;
+	color: #101010;
+	font-weight: bold;
+	position: relative;
+}
+
+.round{
+	position: absolute;
+	top: -0.5rem;
+	right: 1.8rem;
+	color: #FF0000;
+	font-size: 1.5rem;
+}
+
+/*register*/
+.getVerifitionCode{
+	position: relative;
+}
+.verificationCode{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/*comment*/
+.comment{
+	background-color: #fff; 
+	margin-bottom: 2px;
+}
+
+/*groupChat*/
+.GCWrap{
+	background-color: #fff; 
+	margin-top: 3rem; 
+	border-radius: 0.5rem; 
+	border-top: 5px solid #2FB791;
+	border-bottom: 5px solid #2FB791;
+}
+
+.GClocation{
+	color: #2FB791;
+}
+
+.GCWeight{
+	font-weight: bold;
+}
+

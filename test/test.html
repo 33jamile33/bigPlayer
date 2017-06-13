@@ -1,0 +1,33 @@
+<html>
+
+	<head>
+		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+		<!--author fengjianhua 2011-03-08 -->
+		<script type="text/javascript">
+			$(function() {
+				$("#chk").bind({
+					click: function() {
+						if($(this).attr("checked")) {
+							$("#passwd2").val($("#passwd").val());
+							$("#passwd").hide();
+							$("#passwd2").show();
+						} else {
+							$("#passwd").val($("#passwd2").val());
+							$("#passwd2").hide();
+							$("#passwd").show();
+						}
+					}
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<form name="formName">
+			<input id="passwd" type="password" size="24" maxlength="17" style="ime-mode: disabled; display: inline;" />
+			<input id="passwd2" type="text" size="24" maxlength="17" style="ime-mode: disabled; display: none;" />
+			<input id="chk" type="checkbox" />显示密码
+		</form>
+	</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/amazeui.css">
+		<link rel="stylesheet" type="text/css" href="css/layout.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="assets/js/amazeui.js"></script>
+		<script type="text/javascript" src="js/fontSize.js"></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.js" ></script>
+	</head>
+
+	<body>
+		<!--
+        	作者：1259146129@qq.com
+        	时间：2017-06-07
+        	描述：头部
+        -->
+		<header class="am-text-center">
+			<div class="am-padding-vertical-sm am-text-lg title">
+				注册
+			</div>
+		</header>
+		<!--
+        	作者：1259146129@qq.com
+        	时间：2017-06-07
+        	描述：内容
+        -->
+		<form action="" method="post" class="am-padding-top-lg am-padding-horizontal-sm" id="form">
+			<div class="getVerifitionCode">
+				<input type="text" class="am-form-field am-radius" placeholder="请输入手机号" />
+				<a href="" class="am-btn am-btn-success verificationCode">获取验证码</a>
+			</div>
+			<input type="text" class="am-form-field am-radius am-margin-top-sm" placeholder="请输入验证码" />
+			<input type="password" class="am-form-field am-radius am-margin-top-sm pwd" style="ime-mode: disabled; display: inline;" placeholder="请输入密码" />
+			<input type="text" class="am-form-field am-radius am-margin-top-sm pwd1" style="ime-mode: disabled; display: none;" placeholder="请输入密码" />
+			<input type="password" class="am-form-field am-radius am-margin-top-sm pwd" style="ime-mode: disabled; display: inline;" placeholder="请再次输入密码" />
+			<input type="text" class="am-form-field am-radius am-margin-top-sm pwd1" style="ime-mode: disabled; display: none;" placeholder="请再次输入密码" />
+			<div class="am-checkbox">
+				<label>
+		        <input id="check" type="checkbox"> 显示密码
+		      </label>
+			</div>
+			<button type="button" class="am-btn am-btn-default am-btn-block am-margin-top-sm">完成注册</button>
+		</form>
+
+		<script type="text/javascript">
+			$(function() {
+				$('#check').bind({
+					click: function() {
+						if($(this).attr("checked")) {
+							$(".pwd1").val($(".pwd").val());
+							$(".pwd").hide();
+							$(".pwd1").show();
+						} else {
+							$(".pwd").val($(".pwd1").val());
+							$(".pwd1").hide();
+							$(".pwd").show();
+						}
+					}
+				})
+			})
+		</script>
+	</body>
+
+</html>
