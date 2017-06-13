@@ -1,4 +1,8 @@
-^ ^
+﻿^ ^
  v
  我是你爸爸你造吗？
  hi 儿子
+
+
+Hello world!
+Hello Java
