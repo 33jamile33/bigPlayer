@@ -13,7 +13,7 @@
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="assets/js/amazeui.js"></script>
 		<script type="text/javascript" src="js/fontSize.js"></script>
-		<script type="text/javascript" src="js/jquery-1.9.1.js" ></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
 	</head>
 
 	<body>
@@ -38,10 +38,10 @@
 				<a href="" class="am-btn am-btn-success verificationCode">获取验证码</a>
 			</div>
 			<input type="text" class="am-form-field am-radius am-margin-top-sm" placeholder="请输入验证码" />
-			<input type="password" class="am-form-field am-radius am-margin-top-sm pwd" style="ime-mode: disabled; display: inline;" placeholder="请输入密码" />
-			<input type="text" class="am-form-field am-radius am-margin-top-sm pwd1" style="ime-mode: disabled; display: none;" placeholder="请输入密码" />
-			<input type="password" class="am-form-field am-radius am-margin-top-sm pwd" style="ime-mode: disabled; display: inline;" placeholder="请再次输入密码" />
-			<input type="text" class="am-form-field am-radius am-margin-top-sm pwd1" style="ime-mode: disabled; display: none;" placeholder="请再次输入密码" />
+			<input type="password" id="pwd" class="am-form-field am-radius am-margin-top-sm" placeholder="请输入密码" />
+			<input type="text" id="pwd1" class="am-form-field am-radius am-margin-top-sm" style="ime-mode: disabled; display: none;" placeholder="请输入密码" />
+			<input type="password"  id="pwds" class="am-form-field am-radius am-margin-top-sm" style="ime-mode: disabled; display: inline;" placeholder="请再次输入密码" />
+			<input type="text"  id="pwds1" class="am-form-field am-radius am-margin-top-sm" style="ime-mode: disabled; display: none;" placeholder="请再次输入密码" />
 			<div class="am-checkbox">
 				<label>
 		        <input id="check" type="checkbox"> 显示密码
@@ -49,24 +49,6 @@
 			</div>
 			<button type="button" class="am-btn am-btn-default am-btn-block am-margin-top-sm">完成注册</button>
 		</form>
-
-		<script type="text/javascript">
-			$(function() {
-				$('#check').bind({
-					click: function() {
-						if($(this).attr("checked")) {
-							$(".pwd1").val($(".pwd").val());
-							$(".pwd").hide();
-							$(".pwd1").show();
-						} else {
-							$(".pwd").val($(".pwd1").val());
-							$(".pwd1").hide();
-							$(".pwd").show();
-						}
-					}
-				})
-			})
-		</script>
 	</body>
 
 </html>

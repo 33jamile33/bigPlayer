@@ -4,30 +4,30 @@
 		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
 		<!--author fengjianhua 2011-03-08 -->
 		<script type="text/javascript">
-			$(function() {
-				$("#chk").bind({
-					click: function() {
-						if($(this).attr("checked")) {
-							$("#passwd2").val($("#passwd").val());
-							$("#passwd").hide();
-							$("#passwd2").show();
-						} else {
-							$("#passwd").val($("#passwd2").val());
-							$("#passwd2").hide();
-							$("#passwd").show();
-						}
-					}
-				});
-			});
-		</script>
-	</head>
-
-	<body>
-		<form name="formName">
-			<input id="passwd" type="password" size="24" maxlength="17" style="ime-mode: disabled; display: inline;" />
-			<input id="passwd2" type="text" size="24" maxlength="17" style="ime-mode: disabled; display: none;" />
-			<input id="chk" type="checkbox" />显示密码
-		</form>
-	</body>
+     $(function(){
+       $("button").click(function(){
+            var $val=$("[type=password]").val();
+            var $val2=$("[type=text]").val();
+            var dp=$("[type=text]").css("display");
+           if(dp=="none"){
+                $(this).html("密码隐藏");
+                $("[type=text]").val($val);
+                $("[type=password]").hide();
+                $("[type=text]").show();
+            }else{
+                $("[type=password]").val($val2);
+                $("[type=password]").show();
+                $("[type=text]").hide();
+                $(this).html("密码可见");
+            }
+       })
+     })
+    </script>
+</head>
+<body>
+    <input type="password" />
+    <input type="text" style="display:none;"/>
+    <button >密码可见</button>
+</body>
 
 </html>
